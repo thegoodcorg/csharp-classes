@@ -1,4 +1,5 @@
 ﻿using System;
+using Classes.Employees;
 
 namespace Classes
 {
@@ -31,10 +32,19 @@ namespace Classes
                 Title = "CFO",
                 StartDate = DateTime.Now
             };
+            Employee employee4 = new Employee("Ricky");
+
+            employee4.LastName = "Bruner";
+            
+            Employee employee5 = new Employee("Jeremy", "Not CEO");
             // Assign the employees to the company
             foodNStuff.Employees.Add(employee1);
             foodNStuff.Employees.Add(employee2);
             foodNStuff.Employees.Add(employee3);
+            foodNStuff.Employees.Add(employee4);
+            foodNStuff.Employees.Add(employee5);
+
+            
 
             /*
                 Iterate the company's employee list and generate the

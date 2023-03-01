@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using Classes.Employees;
+
 namespace Classes
 {
     public class Company
@@ -10,8 +12,8 @@ namespace Classes
             CreatedOn = createdOn;
             Employees = new List<Employee>();
         }
-        // Some readonly properties (let's talk about gets, baby)
-        public string Name { get; }
+        // Some read only properties (let's talk about gets, baby)
+        private string Name { get; }
         public DateTime CreatedOn { get; }
 
         // Create a public property for holding a list of current employees
